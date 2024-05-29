@@ -6,6 +6,9 @@
     --c-LightBlueBorder: #C2D3FF;
     --c-LightBlueText:#B8C7ED;
     --c-Error:#FF5466;
+    --c-White:white;
+
+    --f-1:"Libre Franklin", sans-serif;
 }
 
 body 
@@ -23,4 +26,82 @@ body
 
 * :last-child {
     margin-bottom: 0;
+}
+
+
+
+/* Typography */
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: var(--f-1);
+    color: var(--c-Black);
+}
+
+#title 
+{
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--c-Grey);
+}
+
+#title span 
+{
+    font-weight: bold;
+    color: var(--c-Black);
+}
+
+
+#subtitle 
+{
+    font-weight: 300;
+}
+
+#input {
+    font-family: inherit;
+    color: inherit;
+}
+#input::placeholder 
+{
+    color: var(--c-LightBlueText);
+}
+
+#input-error 
+{
+    color: var(--c-Error);
+}
+
+#btn 
+{
+    color: var(--c-White);
+}
+
+#copyright 
+{
+    color: var(--c-Grey);
+    font-size: .83rem;
+}
+
+
+@media(min-width:1000px)
+{
+    html {
+        font-size: 16px;
+    }
+    #title 
+    {
+        font-size: 3rem;
+    }
+
+    #subtitle {
+        font-size: 1.25rem;
+    }
+
+    #copyright 
+    {
+        font-size: .75rem;
+    }
 }
