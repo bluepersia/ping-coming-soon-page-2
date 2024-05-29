@@ -1,0 +1,26 @@
+:root 
+{
+    --c-Black: #15202A;
+    --c-Grey: #969696;
+    --c-Blue: #4C7BF3;
+    --c-LightBlueBorder: #C2D3FF;
+    --c-LightBlueText:#B8C7ED;
+    --c-Error:#FF5466;
+}
+
+body 
+{
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
