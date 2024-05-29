@@ -17,19 +17,29 @@
 </head>
 <body>
 
-  We are launching soon!
+  <img id="logo" src="./images/logo.svg" alt="Logo"/>
 
-  Subscribe and get notified
+  <h1 id="title">We are launching <span>soon!</span></h1>
 
-  Notify Me
+  <p id="subtitle">Subscribe and get notified</p>
 
-  &copy; Copyright Ping. All rights reserved.
+  <form id="form">
+    <div id="input-container">
+      <input id="input" type="text" name="email" placeholder='Your email address'/>
+      <p id="input-error">Please provide a valid email address</p>
+    </div>
+    <button id="btn">Notify Me</button>
+  </form>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <img id="illustration" src="./images/illustration-dashboard.png" alt="Slack illustration"/>
+
+  <ul id="social">
+    <li class="social__item"><i class="social__icon fa-brands fa-facebook-f"></i></li>    
+    <li class="social__item"><i class="social__icon fa-brands fa-twitter"></i></li>    
+    <li class="social__item"><i class="social__icon fa-brands fa-instagram"></i></li>    
+  </ul>
+
+  <p id="copyright">&copy; Copyright Ping. All rights reserved.</p>
+
 </body>
 </html>
