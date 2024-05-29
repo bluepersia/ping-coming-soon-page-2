@@ -72,6 +72,7 @@ body {
 #input-error 
 {
     color: var(--c-Error);
+    font-style: italic;
 }
 
 #btn 
@@ -105,3 +106,140 @@ body {
         font-size: .75rem;
     }
 }
+
+
+
+/* Layout */
+
+body {
+    text-align: center;
+    padding: 6.75em 6.4% 3em;
+}
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 3.3em;
+    max-width: 421px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#input-container, #input, #btn
+{
+    width: 100%;
+}
+
+#input, #btn 
+{
+    padding: 1em 2.6em;
+    border-radius: 32px;
+}
+
+#input-container {
+    position: relative;
+    transition: margin 300ms;
+}
+
+#input {
+    border:solid 1px var(--c-LightBlueBorder);
+}
+
+#input-error 
+{
+    opacity: 0%;
+    pointer-events: none;
+    transition: opacity 300ms;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: -.4em;
+    transform: translate(-50%, 100%);
+}
+
+#input-container.invalid {
+    margin-bottom: 2em;
+}
+#input-container.invalid #input-error 
+{
+    opacity: 100%;
+    pointer-events: all;
+}
+
+#btn {
+    background-color: var(--c-Blue);
+    border: solid 1px var(--c-Blue);
+    cursor: pointer;
+    transition: filter 300ms;
+
+}
+
+#btn:hover {
+    filter:brightness(120%);
+}
+
+
+#illustration 
+{
+    width: 100%;
+    max-width: 1280px;
+}
+
+
+#social {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+}
+
+.social__item
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: solid 1px var(--c-LightBlueBorder);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 300ms;
+ }
+
+.social__item:hover {
+    transform: scale(1.1);
+}
+
+ .social__icon {
+    color: var(--c-Blue);
+ }
+
+
+ @media(min-width: 1000px)
+ {
+    #form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 637px;
+    }
+
+    #input-container 
+    {
+        width: 66%;
+    }
+
+    #input-error {
+        text-align: left;
+        padding-left: 2.6em;
+    }
+
+    #btn 
+    {
+        width: 31%;
+    }
+ }
