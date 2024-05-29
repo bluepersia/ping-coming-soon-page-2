@@ -101,6 +101,11 @@ body {
         font-size: 1.25rem;
     }
 
+    #input-error 
+    {
+        font-size: .75rem;
+    }
+
     #copyright 
     {
         font-size: .75rem;
@@ -117,10 +122,17 @@ body {
 }
 
 
+#logo 
+{
+    width: 56px;
+    max-width: 86px;
+}
+
 #form {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    margin-top: 2.6em;
     margin-bottom: 3.3em;
     max-width: 421px;
     margin-left: auto;
@@ -161,6 +173,10 @@ body {
 
 #input-container.invalid {
     margin-bottom: 2em;
+}
+#input-container.invalid #input 
+{
+    border-color: var(--c-Error);
 }
 #input-container.invalid #input-error 
 {
@@ -221,10 +237,14 @@ body {
 
  @media(min-width: 1000px)
  {
+
+    #logo {
+        width: 86px;
+    }
     #form {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: start;
         max-width: 637px;
     }
 
