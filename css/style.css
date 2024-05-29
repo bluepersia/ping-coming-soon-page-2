@@ -167,12 +167,12 @@ body {
     position: absolute;
     width: 100%;
     left: 50%;
-    bottom: -.4em;
-    transform: translate(-50%, 100%);
+    bottom: .4em;
+    transform: translateX(-50%);
 }
 
 #input-container.invalid {
-    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 #input-container.invalid #input 
 {
